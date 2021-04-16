@@ -2,5 +2,5 @@ package com.apauca
 
 class NurseController {
 
-    def index() { }
+    def scaffold=Nurse
 }

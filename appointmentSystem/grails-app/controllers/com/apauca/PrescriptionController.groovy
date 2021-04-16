@@ -2,5 +2,5 @@ package com.apauca
 
 class PrescriptionController {
 
-    def index() { }
+    def scaffold=Prescription
 }
