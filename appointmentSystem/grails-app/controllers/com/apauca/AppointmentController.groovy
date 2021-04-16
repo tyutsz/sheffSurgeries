@@ -2,5 +2,5 @@ package com.apauca
 
 class AppointmentController {
 
-    def index() { }
+    def scaffold=Appointment
 }
