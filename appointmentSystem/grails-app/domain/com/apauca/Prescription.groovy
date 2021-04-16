@@ -19,4 +19,7 @@ class Prescription {
 	dateIssued blank:false
 	patientPaying blank:false
     }
+
+static belongsTo = [patients:Patient, doctor:Doctor]
+
 }

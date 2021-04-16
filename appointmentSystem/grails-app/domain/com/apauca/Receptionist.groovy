@@ -15,4 +15,6 @@ class Receptionist {
 	recepPassword blank:false
 	recepPhone blank:false, unique:true
     }
+
+static belongsTo = [surgery:Surgery]
 }

@@ -16,4 +16,6 @@ class Appointment {
 
 
     }
+
+static belongsTo = [doctors:Doctor, patient:Patient, surgery:Surgery]
 }

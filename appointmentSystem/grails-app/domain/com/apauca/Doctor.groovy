@@ -22,4 +22,8 @@ class Doctor {
 	doctorPhone blank:false, unique:true
 	bio maxSize:5000
     }
+
+//relationship between classes
+static belongsTo = [surgery:Surgery]
+static hasMany = [appointments:Appointment, nurses:Nurse, patients:Patient, prescriptions:Prescription]
 }

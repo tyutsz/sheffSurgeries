@@ -18,4 +18,6 @@ class Nurse {
 
 
     }
+static hasMany = [doctors:Doctor]
+static belongsTo = [doctors:Doctor, suergery:Surgery]
 }
