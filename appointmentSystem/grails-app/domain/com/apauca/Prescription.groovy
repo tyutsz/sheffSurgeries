@@ -5,12 +5,18 @@ class Prescription {
 	String pharmacyName
 	int prescripNumber
 	String medicine
-	int totalCost
+	float totalCost
 	Date dateIssued
-	String patientPaying
+	Boolean patientPaying
 
 
 
     static constraints = {
+	pharmacyName unique:true, blank:false
+	prescripNumber unique:true, blank:false
+	medicine blank:false
+	totalCost blank:false
+	dateIssued blank:false
+	patientPaying blank:false
     }
 }

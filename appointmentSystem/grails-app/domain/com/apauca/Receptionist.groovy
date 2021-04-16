@@ -9,5 +9,10 @@ class Receptionist {
 	int recepPhone
 
     static constraints = {
+	recepName blank:false
+	recepEmail email:true, blank:false, unique:true
+	recepUsername unique:true, blank:false
+	recepPassword blank:false
+	recepPhone blank:false, unique:true
     }
 }

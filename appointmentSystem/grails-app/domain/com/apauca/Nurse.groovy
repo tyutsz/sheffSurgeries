@@ -10,5 +10,12 @@ class Nurse {
 
 
     static constraints = {
+	nurseName blank:false
+	qualifications blank:false
+	nurseEmail email:true, blank:false, unique:true
+	nurseOffice blank:false
+	nursePhone blank:false, unique:true
+
+
     }
 }

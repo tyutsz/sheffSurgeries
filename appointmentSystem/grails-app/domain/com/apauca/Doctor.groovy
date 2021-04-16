@@ -13,5 +13,13 @@ class Doctor {
 
 
     static constraints = {
+	fullName blank:false
+	qualification blank:false
+	position blank:false
+	doctorEmail email:true, blank:false, unique:true
+	password blank:false
+	doctorOffice blank:false
+	doctorPhone blank:false, unique:true
+	bio maxSize:5000
     }
 }
