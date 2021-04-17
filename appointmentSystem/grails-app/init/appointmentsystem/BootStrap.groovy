@@ -4,6 +4,8 @@ class BootStrap {
 
     def init = { servletContext ->
 
+/*
+
 	def surgery1=new Surgery(			
 			 name: 'City Health Centre',
 			 address: '21 Marble Street Sheffield',
@@ -134,7 +136,7 @@ class BootStrap {
 
 
 
-
+*/
 
     }
     def destroy = {

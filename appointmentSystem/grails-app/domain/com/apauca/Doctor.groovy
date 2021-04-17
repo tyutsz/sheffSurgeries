@@ -29,6 +29,6 @@ class Doctor {
     }
 
 //relationship between classes
-static belongsTo = [Surgery, Receptionist, Prescription, Nurse, Appointment]
+static belongsTo = [Surgery, Receptionist, Prescription, Nurse, Appointment, Patient]
 static hasMany = [appointments:Appointment, nurses:Nurse, patients:Patient, prescriptions:Prescription, surgeries:Surgery, receptionists:Receptionist]
 }

@@ -25,6 +25,6 @@ class Patient {
 	patientPhone blank:false, unique:true
     }
 
-static hasMany = [doctors:Doctor, prescriptions:Prescription]
-static belongsTo = [Doctor, Prescription]
+static hasMany = [doctors:Doctor, prescriptions:Prescription, appointments:Appointment]
+static belongsTo = [Doctor, Prescription, Appointment]
 }
