@@ -17,7 +17,7 @@ class Surgery {
 
     static constraints = {
 
-	name blank:false, unique:true
+	name blank:false
 	address blank:false
 	postcode blank:false
 	telephone blank:false, unique:true
@@ -27,7 +27,7 @@ class Surgery {
     }
 
 
-
 static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, appointments:Appointment]
+static belongsTo = [Doctor, Receptionist, Nurse, Appointment]
 
 }

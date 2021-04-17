@@ -2,10 +2,15 @@ package com.apauca
 
 class Appointment {
 //declaring variables
+	String appID
 	Date appDate
 	String appTime
 	int appDuration
 	String roomNumber
+
+	String toString(){
+	return appID
+	}
 
 
     static constraints = {
@@ -18,4 +23,5 @@ class Appointment {
     }
 
 static belongsTo = [Doctor, Patient, Surgery]
+static hasMany = [doctors:Doctor, surgeries:Surgery]
 }

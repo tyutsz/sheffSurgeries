@@ -116,14 +116,16 @@ class BootStrap {
 			 patientPaying: false
 			).save()
 
-	def app1=new Appointment(			
+	def app1=new Appointment(
+			 appID: '1',			
 			 appDate: new Date('11/04/2019'),
 			 appTime: '3:00PM',
 			 appDuration: 45,
 			 roomNumber: 'A-1111'
 			).save()
 
-	def app2=new Appointment(			
+	def app2=new Appointment(	
+			 appID: '2',		
 			 appDate: new Date('30/11/2021'),
 			 appTime: '4:00PM',
 			 appDuration: 60,

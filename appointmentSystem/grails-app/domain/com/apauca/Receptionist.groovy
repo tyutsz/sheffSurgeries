@@ -8,6 +8,10 @@ class Receptionist {
 	String recepPassword
 	String recepPhone
 
+	String toString(){
+	return recepName
+	}
+
     static constraints = {
 	recepName blank:false
 	recepEmail email:true, blank:false, unique:true
@@ -16,5 +20,6 @@ class Receptionist {
 	recepPhone blank:false, unique:true
     }
 
-static belongsTo = Surgery
+static belongsTo = [Surgery, Doctor]
+static hasMany = [surgeries:Surgery, doctors:Doctor]
 }
