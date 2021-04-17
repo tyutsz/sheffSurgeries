@@ -9,6 +9,7 @@ class Surgery {
 	int numberOfPatients
 	String description
 	String openingTime
+
 	
 	String toString(){
 	return name
@@ -28,4 +29,5 @@ class Surgery {
 
 
 static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, appointments:Appointment]
+
 }

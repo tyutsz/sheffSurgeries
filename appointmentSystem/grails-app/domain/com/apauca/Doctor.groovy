@@ -8,8 +8,13 @@ class Doctor {
 	String doctorEmail
 	String password
 	String doctorOffice
-	int doctorPhone
+	String doctorPhone
 	String bio
+
+
+	String toString(){
+	return fullName
+	}
 
 
     static constraints = {
@@ -24,6 +29,6 @@ class Doctor {
     }
 
 //relationship between classes
-static belongsTo = [surgery:Surgery]
+static belongsTo = [Surgery]
 static hasMany = [appointments:Appointment, nurses:Nurse, patients:Patient, prescriptions:Prescription]
 }

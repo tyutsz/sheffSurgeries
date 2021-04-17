@@ -3,7 +3,7 @@ package com.apauca
 class Prescription {
 //declaring variables
 	String pharmacyName
-	int prescripNumber
+	String prescripNumber
 	String medicine
 	float totalCost
 	Date dateIssued
@@ -20,6 +20,7 @@ class Prescription {
 	patientPaying blank:false
     }
 
-static belongsTo = [patients:Patient, doctor:Doctor]
+
+static belongsTo = [Patient, Doctor]
 
 }
