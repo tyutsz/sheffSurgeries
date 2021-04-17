@@ -1,9 +1,15 @@
-package appointmentsystem
+package com.apauca
+
 
 class BootStrap {
 
-    def init = { servletContext ->
-    }
+	def init = { servletContext ->
+//add objects here
+
+		
+
+
+    } 
     def destroy = {
     }
 }

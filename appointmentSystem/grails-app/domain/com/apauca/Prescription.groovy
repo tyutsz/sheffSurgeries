@@ -12,6 +12,7 @@ class Prescription {
 
 
     static constraints = {
+	
 	pharmacyName unique:true, blank:false
 	prescripNumber unique:true, blank:false
 	medicine blank:false
@@ -20,6 +21,6 @@ class Prescription {
 	patientPaying blank:false
     }
 
-static belongsTo = [patients:Patient, doctor:Doctor]
+static belongsTo = [patient:Patient, doctor:Doctor]
 
 }

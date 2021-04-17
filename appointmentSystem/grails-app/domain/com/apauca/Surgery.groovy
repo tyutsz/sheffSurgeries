@@ -5,14 +5,12 @@ class Surgery {
 	String name
 	String address
 	String postcode
-	int telephone
+	String telephone
 	int numberOfPatients
 	String description
 	String openingTime
 	
-	String toString(){
-	return name
-	}
+
 
     static constraints = {
 
@@ -27,5 +25,5 @@ class Surgery {
 
 
 
-static hasMany = [doctors:Doctor, receptionists:Receptionist, nurses:Nurse, appointments:Appointment]
+static hasMany = [receptionists:Receptionist, doctors:Doctor, appointments:Appointment, nurses:Nurse]
 }
