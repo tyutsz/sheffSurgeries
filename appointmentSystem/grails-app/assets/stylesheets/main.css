@@ -84,9 +84,9 @@ img {
 }
 
 .footer img {
-    height: 80px;
-    margin-right: 25px;
-    margin-bottom: 15px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     clear: bottom;
 }
 
@@ -97,7 +97,7 @@ img {
 }
 
 .footer {
-    background: #424649;
+    background: #32819c;
     color: #ffffff;
     clear: both;
     font-size: 1em;
